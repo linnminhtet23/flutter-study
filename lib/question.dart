@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 
 class Question extends StatelessWidget {
   // const Question({Key? key}) : super(key: key);
-  final String questionText;
+  final String questionText; //values of the variable and cannot be altered in the future
+  
   //final tell that this value never change after initialization in constructor
   const Question(this.questionText);
 
@@ -10,6 +11,7 @@ class Question extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,//full width
+      margin: const EdgeInsets.all(10),
         child: Text(
       questionText,
       style: const TextStyle(fontSize: 28),
